@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\delete-sign.png" />
+    <None Remove="windows\AddAndEditCommandWindow.xaml" />
+    <None Remove="windows\CommandListWindow.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleChatBotLib\SimpleChatBotLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\delete-sign.png" />
+  </ItemGroup>
+
+</Project>
